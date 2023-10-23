@@ -1,0 +1,97 @@
+:root {
+    /*Couleurs*/
+    --Gris: #F3F3F3;
+    --Green: #99E2D0;
+    --Green-Font: #008766;
+    --Blue: #89C8FA;
+    --Blue2: #003A68;
+    --Primary: #9356DC;
+}
+
+.restaurants {
+    background-color: darkorchid;
+    padding: 3%;
+}
+.logo{
+    display: flex;
+object-fit: contain;
+}
+.lieu {
+    background-color: var(--Gris);
+}
+
+.btnmenus {
+    border-radius: 35px;
+    background: linear-gradient(#FF79DA, #9356DC);
+    padding: 5px;
+    Width: 400px;
+    Height: 25px;
+    text-align: center;
+    color: white;
+}
+
+.btn-fonctionement{
+    display: flex;
+    text-align: center;
+    border-radius: 25px;
+    box-sizing: border-box;
+    box-shadow: #353535;
+    padding: 1%;
+}
+
+
+.fiche {
+    background-color: white;
+    border-radius: 20px 20px;
+    width: 90%;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 4%;
+}
+
+img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0 ;
+    box-sizing: border-box;
+}
+
+.detail{
+    padding-left: 3%;
+}
+
+
+.image{ 
+    background-size: cover;
+    background-repeat: no-repeat;
+ 
+}
+
+.img-la-pallette{
+     background-image: url("images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
+
+
+.btnouveau {
+display: flex;
+width: 100%;
+justify-content: end;
+}
+
+.texteNew{
+    background-color: var(--Green);
+    color: var(--Green-Font);
+    margin: 4%;
+    padding: 1%;
+
+}
+
+.fonctionement {
+    padding: 4%;
+}
+
+footer {
+    background-color: #353535;
+    color: white;
+}
