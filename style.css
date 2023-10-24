@@ -6,39 +6,68 @@
     --Blue: #89C8FA;
     --Blue2: #003A68;
     --Primary: #9356DC;
+
 }
 
 .restaurants {
-    background-color: darkorchid;
+    background-color: var(--Gris);
     padding: 3%;
 }
-.logo{
-    display: flex;
-object-fit: contain;
+
+.logo {
+
+    text-align: center;
+    padding: 5%;
 }
+
+
 .lieu {
+    background-color: var(--Gris);
+    padding: 5%;
+    text-align: center;
+}
+
+.explorer {
+    text-align: center;
     background-color: var(--Gris);
 }
 
 .btnmenus {
     border-radius: 35px;
     background: linear-gradient(#FF79DA, #9356DC);
-    padding: 5px;
-    Width: 400px;
-    Height: 25px;
+    Width: 200px;
+    height: 45px;
     text-align: center;
     color: white;
+    margin: 3%;
 }
 
-.btn-fonctionement{
+
+
+.btn-fonctionement {
     display: flex;
     text-align: center;
     border-radius: 25px;
     box-sizing: border-box;
-    box-shadow: #353535;
-    padding: 1%;
+    box-shadow: 2px 2px 2px 1px #938b8b44;
+    background-color: var(--Gris);
+    border-radius: 25px;
+    padding: 4%;
+    margin: 1% 1% 10% 1%;
 }
 
+.numero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 5%;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    color: #f6f6f6;
+    background: #9356dc;
+}
 
 .fiche {
     background-color: white;
@@ -49,41 +78,72 @@ object-fit: contain;
     margin: 4%;
 }
 
-img {
+
+
+.detail {
+    padding-left: 3%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+}
+
+.restaurant-name {
+    display: flex;
+    flex-direction: row;
+}
+
+.restaurant-location {
+    display: flex;
+    flex-direction: row;
+}
+
+.fa-regular,
+.fa-heart {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.image {
+    display: flex;
+    background-size:cover;
+    background-repeat: no-repeat;
     width: 100%;
     height: 150px;
-    object-fit: cover;
-    border-radius: 20px 20px 0 0 ;
-    box-sizing: border-box;
+    border-radius: 20px 20px 0 0;
+   
+
 }
 
-.detail{
-    padding-left: 3%;
+.img-la-pallette {
+    background-image: url("images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
 }
 
-
-.image{ 
-    background-size: cover;
-    background-repeat: no-repeat;
- 
+.img-la-note {
+    background-image: url("images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
 }
 
-.img-la-pallette{
-     background-image: url("images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+.img-la-francaise {
+    background-image: url("images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
 }
 
+.img-folie {
+    background-image: url("images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+}
 
 .btnouveau {
-display: flex;
-width: 100%;
-justify-content: end;
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    margin: 10px;
 }
 
-.texteNew{
+.texteNew {
     background-color: var(--Green);
     color: var(--Green-Font);
-    margin: 4%;
     padding: 1%;
+    margin-top: 1%;
+    margin-right: 1%;
+    margin-bottom: auto;
 
 }
 
@@ -93,5 +153,19 @@ justify-content: end;
 
 footer {
     background-color: #353535;
-    color: white;
+    color: white; 
+    width: 100%;
+    height: 10%;
+    padding: 5px 0px 10px 10px ;
+}
+
+h4 {
+    font-family: 'Shrikhand', serif;
+    padding: 0%;
+}
+
+
+li {
+    padding: 2px;
+    list-style-type: none;
 }
