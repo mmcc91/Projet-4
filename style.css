@@ -9,6 +9,11 @@
 
 }
 
+/**/
+/**/
+
+
+/* Page Index  */
 .restaurants {
     background-color: var(--Gris);
     padding: 3%;
@@ -20,16 +25,16 @@
     padding: 5%;
 }
 
-
 .lieu {
-    background-color: var(--Gris);
-    padding: 5%;
+    background-color: lightgrey;
+    padding: 10px;
     text-align: center;
 }
 
 .explorer {
     text-align: center;
     background-color: var(--Gris);
+    padding: 1%;
 }
 
 .btnmenus {
@@ -42,7 +47,16 @@
     margin: 3%;
 }
 
+/*Fonctioneemnt*/
+.fonctionement {
+    padding: 4%;
+}
 
+
+.ligne-fonctionement {
+    flex-direction: column;
+    display: flex;
+}
 
 .btn-fonctionement {
     display: flex;
@@ -69,7 +83,10 @@
     background: #9356dc;
 }
 
+/*Restaurant*/
 .fiche {
+    display: flex;
+    flex-direction: column;
     background-color: white;
     border-radius: 20px 20px;
     width: 90%;
@@ -78,40 +95,30 @@
     margin: 4%;
 }
 
-
-
 .detail {
     padding-left: 3%;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     padding: 10px 10px;
 }
 
-.restaurant-name {
-    display: flex;
-    flex-direction: row;
-}
 
-.restaurant-location {
-    display: flex;
-    flex-direction: row;
+.restaurant-name {
+    font-weight: bold;
 }
 
 .fa-regular,
 .fa-heart {
-    display: flex;
-    flex-direction: row-reverse;
+    align-items: end;
 }
 
 .image {
     display: flex;
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
     height: 150px;
     border-radius: 20px 20px 0 0;
-   
-
 }
 
 .img-la-pallette {
@@ -130,6 +137,7 @@
     background-image: url("images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
 }
 
+/*Encadrer New*/
 .btnouveau {
     display: flex;
     width: 100%;
@@ -147,16 +155,14 @@
 
 }
 
-.fonctionement {
-    padding: 4%;
-}
 
+/*Footer*/
 footer {
     background-color: #353535;
-    color: white; 
+    color: white;
     width: 100%;
     height: 10%;
-    padding: 5px 0px 10px 10px ;
+    padding: 5px 0px 10px 10px;
 }
 
 h4 {
@@ -168,4 +174,63 @@ h4 {
 li {
     padding: 2px;
     list-style-type: none;
+}
+
+@media screen and (min-width: 768px) {
+
+    .ligne-fonctionement {
+        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .btn-fonctionement {
+        width: 30%;
+        height: 10px;
+        padding: 3%;
+    }
+
+
+
+    .fiche-restaurant {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+    }
+
+    .lignedestok {
+        display: flex;
+        flex-direction: row;
+
+        justify-content: space-evenly;
+        padding: 0%;
+    }
+
+    .fiche {
+        width: 490px;
+        height: 251px;
+    }
+
+    .image {
+        display: block;
+        height: 180px;
+        width: :auto;
+    }
+.texteNew{
+    margin-right: 5%;
+}
+
+    footer {
+        text-align: end;
+    }
+
+    li {
+        display: inline;
+        padding: 2px;
+        list-style-type: none;
+        flex-direction: row;
+        margin-right: 10%;
+    }
 }
