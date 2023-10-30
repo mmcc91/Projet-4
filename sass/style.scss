@@ -12,6 +12,13 @@
 /**/
 /**/
 
+.another-test {
+    background-color: turquoise;
+}
+
+.test {
+    background-color: #003A68;
+}
 
 /* Page Index  */
 .restaurants {
@@ -40,11 +47,15 @@
 .btnmenus {
     border-radius: 35px;
     background: linear-gradient(#FF79DA, #9356DC);
-    Width: 200px;
+    width: 200px;
     height: 45px;
     text-align: center;
     color: white;
     margin: 3%;
+
+    &:hover {
+        opacity: 80%;
+    }
 }
 
 /*Fonctioneemnt*/
@@ -122,10 +133,46 @@
     font-weight: bold;
 }
 
-.fa-regular,
-.fa-heart {
-    align-items: end;
+
+.coeur{
+    position: relative;
+    width: 16px;
+    height: 16px;
 }
+
+.fa-regular.fa-heart {
+    align-items: end;
+    position: absolute;
+    background: black;
+    z-index: 100;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+&:hover{
+    display: none;
+}
+}
+
+.fa-solid.fa-heart {
+    align-items: end;
+    position: absolute;
+   z-index: 99;
+    background: black;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+&:hover{
+    display: block;
+        background: radial-gradient((#FF79DA), (#9356DC));
+        background-color: radial-gradient((#FF79DA), (#9356DC));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    
+}
+}
+
+
+
+
+
 
 .image {
     display: flex;
@@ -137,19 +184,19 @@
 }
 
 .img-la-pallette {
-    background-image: url("images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+    background-image: url("/assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
 }
 
 .img-la-note {
-    background-image: url("images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+    background-image: url("/assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
 }
 
 .img-la-francaise {
-    background-image: url("images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+    background-image: url("/assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
 }
 
 .img-delice {
-    background-image: url("images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+    background-image: url("/assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
 }
 
 /*Encadrer New*/
