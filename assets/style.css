@@ -125,32 +125,49 @@
 }
 
 .coeur {
-  position: relative;
-  width: 40px;
-  height: 40px;
+  width: 19px;
+  height: 17px;
+  cursor: pointer;
+}
+
+.coeur-lb {
+  width: 19px;
+  height: 17px;
+}
+
+input.coeur-cb {
+  display: none;
+}
+
+.coeur-uc {
+  display: block;
+}
+
+.coeur-ch {
+  display: none;
+}
+
+input.coeur-cb:checked ~ .coeur-ch {
+  display: block;
+}
+
+input.coeur-cb:checked ~ .coeur-uc {
+  display: none;
 }
 
 .fa-regular.fa-heart {
-  width: 40px;
-  height: 40px;
-  position: absolute;
+  width: 19px;
+  height: 17px;
   background: black;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.fa-regular.fa-heart:hover {
-  display: none;
-}
 
 .fa-solid.fa-heart {
-  width: 40px;
-  height: 40px;
-  position: absolute;
+  width: 19px;
+  height: 17px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-.fa-solid.fa-heart:hover {
-  display: block;
   background: radial-gradient(#FF79DA, #9356DC);
   background-color: radial-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;

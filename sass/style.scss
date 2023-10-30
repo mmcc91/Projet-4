@@ -133,43 +133,59 @@
     font-weight: bold;
 }
 
-$coeur-width: 40px;
-$coeur-height: 40px;
+$coeur-width: 19px;
+$coeur-height: 17px;
 
 .coeur {
-    position: relative;
     width: $coeur-width;
     height: $coeur-height;
+    cursor: pointer;
+}
+
+.coeur-lb {
+    width: $coeur-width;
+    height: $coeur-height;
+}
+
+input.coeur-cb {
+    display: none;
+}
+
+// montre le coeur sans rien
+.coeur-uc {
+    display: block;
+}
+
+.coeur-ch {
+    display: none;
+}
+
+// montre le coeur fill
+input.coeur-cb:checked~.coeur-ch {
+    display: block;
+}
+
+input.coeur-cb:checked~.coeur-uc {
+    display: none;
 }
 
 .fa-regular.fa-heart {
     width: $coeur-width;
     height: $coeur-height;
-    position: absolute;
     background: black;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
-    &:hover {
-        display: none;
-    }
 }
 
 .fa-solid.fa-heart {
     width: $coeur-width;
     height: $coeur-height;
-    position: absolute;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
-    &:hover {
-        display: block;
-        background: radial-gradient((#FF79DA), (#9356DC));
-        background-color: radial-gradient((#FF79DA), (#9356DC));
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-
-    }
+    background: radial-gradient((#FF79DA), (#9356DC));
+    background-color: radial-gradient((#FF79DA), (#9356DC));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 
