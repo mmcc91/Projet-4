@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   /*Couleurs*/
   --Gris: #F3F3F3;
@@ -242,6 +243,94 @@ li {
   list-style-type: none;
 }
 
+/* page restaurant menu*/
+.logo-menu {
+  text-align: center;
+  background-color: #003A68;
+  margin: 15%;
+}
+
+/*presentation*/
+.presentation {
+  background-color: var(--Gris);
+  text-align: center;
+  margin-top: -50px;
+}
+
+/*1erligne*/
+.premierligne {
+  display: flex;
+}
+
+/* Menu restaurant */
+.menu {
+  padding-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+/*titre selection */
+.titre-selection {
+  text-transform: uppercase;
+  font-weight: 400;
+  border-bottom: 1px solid #9356dc;
+  width: 33px;
+  background-color: #008766;
+  text-align: right;
+}
+
+/*L'ensemble des plats*/
+/**  MENU   **/
+.nom {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  flex: 1;
+}
+
+.prix {
+  background: yellow;
+  display: flex;
+  text-align: end;
+}
+
+.recette {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  padding: 2%;
+  box-shadow: 20px 20px 10px 0 black;
+  border-radius: 5px;
+  margin: 1%;
+  justify-content: space-between;
+}
+
+.checked {
+  width: 13px;
+  display: block;
+  background-color: blueviolet;
+  overflow: hidden;
+  cursor: pointer;
+  background: #99e2d0;
+}
+
+.checked:hover {
+  animation-name: animationBouton; /* Nom de l'animation créée avec @keyframes */
+  animation-duration: 2s; /* Durée totale de l'animation */
+  animation-timing-function: ease-in-out; /* Rythme de l'animation */
+  animation-iteration-count: 1; /* Combien de fois l'animation doit se répéter */
+  width: 50%;
+  color: darkmagenta;
+  transform: rotate(180deg);
+}
+
+@keyframes animationBouton {
+  100% {
+    background-color: red; /* Couleur finale */
+    transform: scale(1); /* La taille revient à la normale */
+  }
+}
 @media screen and (min-width: 768px) {
   .ligne-fonctionement {
     flex-direction: row;
@@ -283,5 +372,8 @@ li {
   }
   h5 {
     display: inline;
+  }
+  .menu {
+    flex-direction: row;
   }
 }/*# sourceMappingURL=style.css.map */
