@@ -9,7 +9,17 @@
   --Primary: #9356DC;
 }
 
-/**/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*   lien pas de bleu pas de underscore */
+a {
+  color: black;
+  text-decoration: none;
+}
+
 /**/
 .another-test {
   background-color: turquoise;
@@ -167,7 +177,6 @@ input.coeur-cb:checked ~ .coeur-uc {
 .fa-solid.fa-heart {
   width: 19px;
   height: 17px;
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background: radial-gradient(#FF79DA, #9356DC);
   background-color: radial-gradient(#FF79DA, #9356DC);
@@ -243,11 +252,11 @@ li {
   list-style-type: none;
 }
 
-/* page restaurant menu*/
+/********************************************** page restaurant menu*/
 .logo-menu {
   text-align: center;
   background-color: #003A68;
-  margin: 15%;
+  padding: 10%;
 }
 
 /*presentation*/
@@ -260,14 +269,16 @@ li {
 /*1erligne*/
 .premierligne {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* Menu restaurant */
 .menu {
-  padding-top: 10%;
+  padding-top: 5%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 /*titre selection */
@@ -282,53 +293,76 @@ li {
 
 /*L'ensemble des plats*/
 /**  MENU   **/
+.recette {
+  display: flex;
+  flex-direction: row;
+  box-shadow: 20px 20px 10px 0 lightgrey;
+  border-radius: 5px;
+  margin: 1%;
+  justify-content: space-between;
+  cursor: pointer;
+  margin: 3%;
+  height: 35px;
+}
+
+/**  nom du plat et ingredient  **/
 .nom {
   display: flex;
   flex-direction: column;
   text-align: start;
   flex: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
+/**  parti prix et checked ANIMATION  **/
 .prix {
-  background: yellow;
   display: flex;
   text-align: end;
-}
-
-.recette {
-  display: flex;
-  flex-direction: row;
-  background-color: white;
-  padding: 2%;
-  box-shadow: 20px 20px 10px 0 black;
-  border-radius: 5px;
-  margin: 1%;
-  justify-content: space-between;
+  font-weight: bold;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 35%;
 }
 
 .checked {
-  width: 13px;
-  display: block;
-  background-color: blueviolet;
+  width: 0%;
+  display: flex;
   overflow: hidden;
-  cursor: pointer;
-  background: #99e2d0;
+  animation-name: animationchecked;
+  /* Nom de l'animation créée avec @keyframes */
 }
 
-.checked:hover {
-  animation-name: animationBouton; /* Nom de l'animation créée avec @keyframes */
-  animation-duration: 2s; /* Durée totale de l'animation */
-  animation-timing-function: ease-in-out; /* Rythme de l'animation */
-  animation-iteration-count: 1; /* Combien de fois l'animation doit se répéter */
-  width: 50%;
-  color: darkmagenta;
-  transform: rotate(180deg);
+.presentation .menu .recette:hover .checked {
+  justify-content: center;
+  white-space: nowrap;
+  color: white;
+  width: 15%;
+  align-items: center;
+  border-radius: 0 15px 15px 0;
+  background-color: #a6cac1;
+  transform: translateX(0px);
+  transition: transform 5s ease-in-out;
 }
 
-@keyframes animationBouton {
-  100% {
-    background-color: red; /* Couleur finale */
-    transform: scale(1); /* La taille revient à la normale */
+.presentation .menu .recette:hover .checked i {
+  transform: rotate(360deg);
+  transition: transform 750ms ease-in-out;
+}
+
+.presentation .entrees .recette:hover .prix {
+  transition: margin-right 750ms ease-in-out;
+}
+
+@keyframes animationchecked {
+  from {
+    visibility: hidden;
+    rotate: 180;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
   }
 }
 @media screen and (min-width: 768px) {
