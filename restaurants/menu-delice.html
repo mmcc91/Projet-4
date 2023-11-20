@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<script src="https://kit.fontawesome.com/71b1a4a41e.js" crossorigin="anonymous"></script>
 
 <head>
   <meta charset="utf-8">
@@ -10,16 +11,40 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
 </head>
+
 <header>
   <div class="logo">
-    <img src="/assets/images/logo/ohmyfood@2x.svg">
+    <a href="../index.html">
+      <i class="fa-solid fa-arrow-left"></i>
+      <img src="/assets/images/logo/ohmyfood@2x.svg">
+    </a>
   </div>
 </header>
 
 <body>
-  <div class="image img-delice"></div>
+
+
+
+  <section class="presentation">
+
+  
+      <div class="image img-delice"></div>
+  
+      <div class="premierligne">
+        <h4> Les delice des sens </h4>
+        <label class="coeur-lb" for="_1">
+          <input id="_1" class="coeur-cb" type="checkbox">
+          <div class="coeur coeur-uc">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="coeur coeur-ch">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+        </label>
+      </div>
+
+
   <section class="menu">
-    <div class="nomdurestaurant">Les delice des sens</div>
     <section class="entrees">
       <!--menus containor-->
       <div class="titre-selection">Entrées</div>
@@ -27,7 +52,7 @@
       <article class="recette">
 
         <div class="nom">
-          Tartare de thon
+          Tartare de thon<br>
           Assaisonné au yuzu
         </div>
         <div class="prix"> 25 €</div>
@@ -35,7 +60,7 @@
       </article>
       <article class="recette">
         <div class="nom">
-          Bouchée de homard croustillant
+          Bouchée de homard croustillant<br>
           Et sa farandole de petits légumes
         </div>
         <div class="prix"> 35 € </div>
@@ -43,7 +68,7 @@
       </article>
       <article class="recette">
         <div class="nom">
-          Velouté de cèpes
+          Velouté de cèpes<br>
           Aux truffes </div>
         <div class="prix"> 20 €</div>
         <div class="checked"> <i class="fa-solid fa-circle-check"></i> </div>
@@ -52,25 +77,25 @@
 
     <section class="plats">
       <article class="recette">
-        <div class="nom"> 
-          Poulet rôti aux herbes de Provence 
-Et sa crème de truffe
+        <div class="nom">
+          Poulet rôti aux herbes de Provence <br>
+          Et sa crème de truffe
         </div>
         <div class="prix">40 €</div>
         <div class="checked"> <i class="fa-solid fa-circle-check"></i> </div>
       </article>
       <article class="recette">
-        <div class="nom"> 
-          Langouste rôtie 
-Et ses légumes de saison
+        <div class="nom">
+          Langouste rôtie <br>
+          Et ses légumes de saison
         </div>
         <div class="prix"> 35 € </div>
         <div class="checked"> <i class="fa-solid fa-circle-check"></i> </div>
       </article>
       <article class="recette">
         <div class="nom">
-          Côte de bœuf Angus 
-Et sa purée de panais </div>
+          Côte de bœuf Angus <br>
+          Et sa purée de panais </div>
         <div class="prix">44 € </div>
         <div class="checked"> <i class="fa-solid fa-circle-check"></i> </div>
       </article>
@@ -78,21 +103,21 @@ Et sa purée de panais </div>
 
     <section class="desserts">
       <article class="recette">
-        <div class="nom"> Farandole de desserts
+        <div class="nom"> Farandole de desserts<br>
           Du chef</div>
         <div class="prix"> 18€ </div>
         <div class="checked"> <i class="fa-solid fa-circle-check"></i> </div>
       </article>
       <article class="recette">
-        <div class="nom"> 
-          Crème brulée 
-Revisitée
+        <div class="nom">
+          Crème brulée <br>
+          Revisitée
         </div>
         <div class="prix">22 € </div>
         <div class="checked"> <i class="fa-solid fa-circle-check"></i> </div>
       </article>
       <article class="recette">
-        <div class="nom"> Tiramisu 
+        <div class="nom"> Tiramisu <br>
           À la noisette</div>
         <div class="prix"> 23€ </div>
         <div class="checked"> <i class="fa-solid fa-circle-check"></i> </div>
@@ -106,11 +131,16 @@ Revisitée
 </body>
 <footer>
 
-  <h4>Ohmyfood</h4>
-  <li><a><i class="fa-solid fa-utensils" style="color: white;"> </i> Proposer un restaurant</a></li>
-  <li><a><i class="fa-solid fa-handshake-angle" style="color: white;"> </i> Devenir partenaire</a></li>
-  <li><a>Mentions légales</a></li>
-  <li><a>Contact</a></li>
+  <li><a>
+      <h4>Ohmyfood</h4>
+    </a></li>
+  <li><a href="#" ><i class="fa-solid fa-utensils" style="color: white;"> </i> Proposer un restaurant</a></li>
+  <li><a href="#" ><i class="fa-solid fa-handshake-angle" style="color: white;"> </i> Devenir partenaire</a></li>
+  <li><a href="#" >Mentions légales</a></li>
+  <li><a href="mailto:ohmyfood@contact.com" >Contact</a></li>
+  <li><a>
+      <h5>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Ohmyfood</h5>
+    </a></li>
 
 </footer>
 

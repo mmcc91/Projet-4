@@ -11,106 +11,142 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
 </head>
-<header>
-  <div class="logo-menu">
-    <i class="fa-solid fa-arrow-left"></i>
-    <img src="/assets/images/logo/ohmyfood@2x.svg">
-  </div>
 
+<header>
+  <div class="logo">
+    <a href="../index.html">
+      <i class="fa-solid fa-arrow-left"></i>
+      <img src="/assets/images/logo/ohmyfood@2x.svg">
+    </a>
+  </div>
 </header>
 
 
 
 <body>
-  <div class="image img-la-note"></div>
-  <section class="menu">
-    <div class="nomdurestaurant">La Note Enchantee</div>
-    <section class="entrees">
-      <article class="recette">
-        <div class="nom">
-          Ravioles de foie gras
-          Accompagnées de leur crème à la truffe </div>
-        <div class="prix"> 25 €</div>
-        <div class="checked"> <i class="fa-solid fa-circle-check"></i> </div>
-      </article>
-      <div class="nom"> Caviar osciètre <br>
-        Sur blini à la farine de blé noir </div>
-      <div class="prix"> 35€ </div>
-      <div class="checked"><i class="fa-solid fa-circle-check"></i> </div>
-      </article>
-      <article class="recette">
-        <div class="nom"> Homard et espuma de potiron<br>
-          Marinés aux zestes d'orange </div>
-        <div class="prix"> 20€ </div>
-        <div class="checked"> <i class="fa-solid fa-circle-check"></i></div>
+
+
+  <section class="presentation">
+
+
+    <div class="image img-la-note"></div>
+
+
+    <div class="premierligne">
+      <h4> La Note Enchantee </h4>
+      <label class="coeur-lb" for="_1">
+        <input id="_1" class="coeur-cb" type="checkbox">
+        <div class="coeur coeur-uc">
+          <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class="coeur coeur-ch">
+          <i class="fa-solid fa-heart"></i>
+        </div>
+      </label>
+    </div>
+
+
+
+    <section class="menu">
+
+      <section class="entrees">
+
+        <!--menus containor-->
+        <div class="titre-selection">Entrées</div>
+        <!--RECETTE plats -->
         <article class="recette">
-          <div class="nom"> Foie gras de canard cuit entier
+          <div class="nom">
+            Ravioles de foie gras
+            Accompagnées de leur crème à la truffe </div>
+          <div class="prix"> 25 €</div>
+          <div class="checked"> <i class="fa-solid fa-circle-check"></i> </div>
+        </article>
+        <article class="recette">
+          <div class="nom"> Caviar osciètre <br>
+            Sur blini à la farine de blé noir </div>
+          <div class="prix"> 35€ </div>
+          <div class="checked"><i class="fa-solid fa-circle-check"></i> </div>
+        </article>
+
+        <article class="recette">
+          <div class="nom"> Homard et espuma de potiron<br>
+            Marinés aux zestes d'orange </div>
+          <div class="prix"> 20€ </div>
+          <div class="checked"> <i class="fa-solid fa-circle-check"></i></div>
+        </article>
+        <article class="recette">
+
+          <div class="nom"> Foie gras de canard cuit entier<br>
             Confiture de figue et pain toasté </div>
           <div class="prix"> 35 € </div>
           <div class="checked"> <i class="fa-solid fa-circle-check"></i> </div>
         </article>
 
-    </section>
+      </section>
 
-    <section class="plats">
-      <article class="recette">
-        <div class="nom"> 
-          Noix de coquilles Saint-Jacques
-Sur lit de purée de céleri-rave
-        </div>
-        <div class="prix"> 40 €</div>
-        <div class="checked"> <i class="fa-solid fa-circle-check"></i> </div>
-      </article>
-      <articleclass="recette">
-        <div class="nom">
-          Langoustine poêlée
-Purée de patate douce </div>
-        <div class="prix"> 35 € </div>
-        <div class="checked"> <i class="fa-solid fa-circle-check"></i> </div>
+      <section class="plats">
+        <article class="recette">
+          <div class="nom">
+            Noix de coquilles Saint-Jacques<br>
+            Sur lit de purée de céleri-rave
+          </div>
+          <div class="prix"> 40 €</div>
+          <div class="checked"> <i class="fa-solid fa-circle-check"></i> </div>
         </article>
         <article class="recette">
-          <div class="nom"> 
-            Mijoté de queue de bœuf 
-Et riz sauvage aux zestes de citron
+          <div class="nom">
+            Langoustine poêlée<br>
+            Purée de patate douce </div>
+          <div class="prix"> 35 € </div>
+          <div class="checked"> <i class="fa-solid fa-circle-check"></i> </div>
+        </article>
+        <article class="recette">
+          <div class="nom">
+            Mijoté de queue de bœuf <br>
+            Et riz sauvage aux zestes de citron
           </div>
           <div class="prix">44 € </div>
           <div class="checked"> <i class="fa-solid fa-circle-check"></i> </div>
         </article>
-    </section>
+      </section>
 
-    <section class="desserts">
-      <article class="recette">
-        <div class="nom">Macaron noisette et chocolat
-          Glace au caramel brun et sel de Guérande </div>
-        <div class="prix">18 € </div>
-        <div class="checked"> <i class="fa-solid fa-circle-check"></i> </div>
-      </article>
-      <article class="recette">
-        <div class="nom">Baba au rhum revisité 
-          Avec son coulis de citron </div>
-        <div class="prix">22 € </div>
-        <div class="checked"> <i class="fa-solid fa-circle-check"></i> </div>
-      </article>
-      <article class="recette">
-        <div class="nom"> Tarte au citron meringuée 
-          Déstructurée</div>
-        <div class="prix">23 € </div>
-        <div class="checked"> <i class="fa-solid fa-circle-check"></i> </div>
-      </article>
+      <section class="desserts">
+        <article class="recette">
+          <div class="nom">Macaron noisette et chocolat<br>
+            Glace au caramel brun et sel de Guérande </div>
+          <div class="prix">18 € </div>
+          <div class="checked"> <i class="fa-solid fa-circle-check"></i> </div>
+        </article>
+        <article class="recette">
+          <div class="nom">Baba au rhum revisité <br>
+            Avec son coulis de citron </div>
+          <div class="prix">22 € </div>
+          <div class="checked"> <i class="fa-solid fa-circle-check"></i> </div>
+        </article>
+        <article class="recette">
+          <div class="nom"> Tarte au citron meringuée <br>
+            Déstructurée</div>
+          <div class="prix">23 € </div>
+          <div class="checked"> <i class="fa-solid fa-circle-check"></i> </div>
+        </article>
+      </section>
+      <form>
+        <input class="btnmenus" type="button" value="Commandez" />
+      </form>
     </section>
-    <form>
-      <input class="btnmenus" type="button" value="Commandez" />
-    </form>
-  </section>
 </body>
 <footer>
 
-
-  <h4>Ohmyfood</h4>
-  <li><a><i class="fa-solid fa-utensils" style="color: white;"> </i> Proposer un restaurant</a></li>
-  <li><a><i class="fa-solid fa-handshake-angle" style="color: white;"> </i> Devenir partenaire</a></li>
-  <li><a>Mentions légales</a></li>
-  <li><a>Contact</a></li>
+  <li><a>
+      <h4>Ohmyfood</h4>
+    </a></li>
+  <li><a href="#" ><i class="fa-solid fa-utensils" style="color: white;"> </i> Proposer un restaurant</a></li>
+  <li><a href="#" ><i class="fa-solid fa-handshake-angle" style="color: white;"> </i> Devenir partenaire</a></li>
+  <li><a href="#" >Mentions légales</a></li>
+  <li><a href="mailto:ohmyfood@contact.com" >Contact</a></li>
+  <li><a>
+      <h5>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Ohmyfood</h5>
+    </a></li>
 
 </footer>
 

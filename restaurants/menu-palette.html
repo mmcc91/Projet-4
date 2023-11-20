@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <script src="https://kit.fontawesome.com/71b1a4a41e.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/71b1a4a41e.js" crossorigin="anonymous"></script>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,20 +11,27 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
 </head>
+
 <header>
   <div class="logo">
-    <img src="/assets/images/logo/ohmyfood@2x.svg">
+    <a href="../index.html">
+      <i class="fa-solid fa-arrow-left"></i>
+      <img src="/assets/images/logo/ohmyfood@2x.svg">
+    </a>
   </div>
+   
 </header>
 
 <body>
 
 
   <!--section image et nom restaurant-->
+
+
   <section class="presentation">
-    <div class="image img-la-note"></div>
+     <div class="image img-la-note"></div>
     <div class="premierligne">
-      <h2>La palette du goût</h2>
+      <h4>La palette du goût</h4>
       <label class="coeur-lb" for="_1">
         <input id="_1" class="coeur-cb" type="checkbox">
         <div class="coeur coeur-uc">
@@ -43,7 +51,7 @@
         <!--RECETTE plats -->
         <article class="recette">
           <!--NOM- plats-title -->
-          <div class="nom"> Ravioles de foie gras <br>Accompagnées de leur crème à la truffe </div>
+          <div class="nom"><h3>Ravioles de foie gras</h3>Accompagnées de leur crème à la truffe </div>
           <!--PRIX PRIXplats-->
           <div class="prix"> 25€ </div>
           <!--CHECKED plat-valide-->
@@ -51,13 +59,16 @@
         </article>
 
         <article class="recette">
-          <div class="nom"> Caviar osciètre <br>
+
+          <div class="nom">  <h3>Caviar osciètre</h3>
             Sur blini à la farine de blé noir </div>
           <div class="prix"> 35€ </div>
           <div class="checked"><i class="fa-solid fa-circle-check"></i> </div>
         </article>
+
         <article class="recette">
-          <div class="nom"> Homard et espuma de potiron<br>
+
+          <div class="nom"> <h3>Homard et espuma de potiron</h3>
             Marinés aux zestes d'orange </div>
           <div class="prix"> 20€ </div>
           <div class="checked"> <i class="fa-solid fa-circle-check"></i></div>
@@ -67,19 +78,19 @@
       <section class="plats">
         <div class="titre-selection">Plats</div>
         <article class="recette">
-          <div class="nom"> Noix de coquilles Saint-Jacques<br>
+          <div class="nom"> <h3>Noix de coquilles Saint-Jacques</h3>
             Sur lit de purée de céleri-rave </div>
           <div class="prix"> 40€ </div>
           <div class="checked"> <i class="fa-solid fa-circle-check"></i></div>
         </article>
         <article class="recette">
-          <div class="nom"> Langoustine poêlée<br>
+          <div class="nom"> <h3>Langoustine poêlée</h3>
             Purée de patate douce </div>
           <div class="prix"> 35€ </div>
           <div class="checked"> <i class="fa-solid fa-circle-check"></i></div>
         </article>
         <article class="recette">
-          <div class="nom"> Mijoté de queue de bœuf <br>
+          <div class="nom"> <h3>Mijoté de queue de bœuf </h3>
             Et riz sauvage aux zestes de citron </div>
           <div class="prix"> 44€ </div>
           <div class="checked"><i class="fa-solid fa-circle-check"></i> </div>
@@ -89,20 +100,20 @@
       <section class="desserts">
         <div class="titre-selection">Desserts</div>
         <article class="recette">
-          <div class="nom"> Macaron noisette et chocolat<br>
+          <div class="nom"> <h3>Macaron noisette et chocolat</h3>
             Glace au caramel brun et sel de Guérande </div>
           <div class="prix"> 18€ </div>
           <div class="checked"> <i class="fa-solid fa-circle-check"></i></div>
         </article>
         <article class="recette">
-          <div class="nom"> Baba au rhum revisité <br>
+          <div class="nom">  <h3>Baba au rhum revisité</h3>
             Avec son coulis de citron </div>
           <div class="prix"> 22€ </div>
           <div class="checked"> <i class="fa-solid fa-circle-check"></i></div>
         </article>
         <article class="recette">
           <div class="nom">
-            Tarte au citron meringuée <br>
+            <h3> Tarte au citron meringuée</h3>
             Déstructurée </div>
           <div class="prix"> 23€ </div>
           <div class="checked"> <i class="fa-solid fa-circle-check"></i></div>
@@ -115,11 +126,18 @@
   </section>
 
 </body>
-<h4>Ohmyfood</h4>
-<li><a><i class="fa-solid fa-utensils" style="color: white;"> </i> Proposer un restaurant</a></li>
-<li><a><i class="fa-solid fa-handshake-angle" style="color: white;"> </i> Devenir partenaire</a></li>
-<li><a>Mentions légales</a></li>
-<li><a>Contact</a></li>
+<footer>
+
+  <li><a>
+      <h4>Ohmyfood</h4>
+    </a></li>
+  <li><a href="#" ><i class="fa-solid fa-utensils" style="color: white;"> </i> Proposer un restaurant</a></li>
+  <li><a href="#" ><i class="fa-solid fa-handshake-angle" style="color: white;"> </i> Devenir partenaire</a></li>
+  <li><a href="#" >Mentions légales</a></li>
+  <li><a href="mailto:ohmyfood@contact.com" >Contact</a></li>
+  <li><a>
+      <h5>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Ohmyfood</h5>
+    </a></li>
 
 </footer>
 
