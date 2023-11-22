@@ -91,7 +91,6 @@ a {
     box-sizing: border-box;
     box-shadow: 2px 2px 2px 1px #938b8b44;
     background-color: var(--Gris);
-    border-radius: 25px;
     width: 322px;
     height: 72px;
 }
@@ -101,13 +100,13 @@ a {
     flex-direction: row;
     align-items: center;
     margin: 2%;
+    width: 80%;
 }
 
 .numeroTexte :hover {
- background-color: #F5EDFF;
- box-shadow:0px 4px 15px  #9356DC ;
+    background-color: #F5EDFF;
+    box-shadow: 0px 4px 15px #9356DC;
 }
-
 
 .numero {
     display: flex;
@@ -128,10 +127,10 @@ a {
     flex-direction: column;
     background-color: white;
     border-radius: 20px 20px;
-    width: 90%;
+    width: 100%;
     height: 100%;
     box-sizing: border-box;
-    margin: 4%;
+    margin: 10px;
 }
 
 .detail {
@@ -230,7 +229,7 @@ input.coeur-cb:checked~.coeur-uc {
     display: flex;
     width: 100%;
     justify-content: end;
-    margin: 10px;
+    padding: 10px 10px 0 0;
 }
 
 .texteNew {
@@ -246,7 +245,6 @@ input.coeur-cb:checked~.coeur-uc {
 /*Footer*/
 footer {
     background-color: #353535;
-    color: white;
     width: 100%;
     height: 10%;
     padding: 5px 0px 10px 10px;
@@ -268,6 +266,7 @@ li {
     padding: 2px;
     list-style-type: none;
 }
+
 .loader {
     position: fixed;
     display: flex;
@@ -281,29 +280,34 @@ li {
     animation: loader 2.5s linear forwards;
 }
 
+footer a {
+    color: white;
+}
+
 @keyframes loader {
     0% {
         transform: scale(2);
         filter: blur(4px);
         opacity: 1;
         z-index: 1;
-      }
-      100% {
+    }
+
+    100% {
         transform: scale(1);
         filter: blur(0px);
         opacity: 0;
         z-index: -1;
-      }
-  }
+    }
+}
 
 
-/********************************************** page restaurant menu*/
+/********************************************** page restaurant menu*******************************************/
 
 /*presentation*/
 
 .presentation .image {
-border-radius: 0%;
-padding-left: 10px;
+    border-radius: 0%;
+    padding-left: 10px;
 }
 
 /*1erligne*/
@@ -313,16 +317,17 @@ padding-left: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-      background-color: #F6F6F6;
+    background-color: #F6F6F6;
     text-align: center;
-    border-radius: 15px 15px 0 0  ;
+    border-radius: 15px 15px 0 0;
 }
+
 .premierligne h4 {
     padding-left: 10px;
-    
-}  
 
-.premierligne label{
+}
+
+.premierligne label {
     padding-right: 10px;
 }
 
@@ -331,7 +336,7 @@ padding-left: 10px;
 /* Menu restaurant */
 
 .menu {
-background-color: #F6F6F6;
+    background-color: #F6F6F6;
     padding-top: 5%;
     display: flex;
     flex-direction: column;
@@ -363,30 +368,34 @@ background-color: #F6F6F6;
 
     animation: apparition 1s backwards;
     background-color: #FFFFFF;
-    padding-left: 10px ;
-  
-    position: relative;
 
-        text-overflow: ellipsis;
+
+    position: relative;
+  
+    text-overflow: ellipsis;
     overflow: hidden;
+
+
 }
 
 /**  nom du plat et ingredient  **/
 .nom {
-    display: flex;
     flex-direction: column;
     text-align: start;
     flex: 1;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-font-size: small;
-}
-.nom h3{
-  
     font-size: small;
-   
-    }
+    padding: 10px;
+}
+
+.nom h3 {
+    font-size: small;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
 
 /**  parti prix et checked ANIMATION  **/
 .prix {
@@ -397,21 +406,17 @@ font-size: small;
     justify-content: flex-end;
     align-items: flex-end;
     width: 35%;
-    padding-right: 10px;
+    padding: 10px;
 }
-
-
 
 .checked {
     width: 0%;
     flex-direction: column;
     display: flex;
     overflow: hidden;
-    animation-name: animationchecked;
+    animation-name: animationchecked ;
     /* Nom de l'animation créée avec @keyframes */
-
 }
-
 
 .presentation .menu .recette:hover .checked {
     justify-content: center;
@@ -422,32 +427,31 @@ font-size: small;
     border-radius: 0 15px 15px 0;
     background-color: #a6cac1;
     transform: translateX(-0px);
-    transition: transform 5s ease-in-out;
+    transition: 500ms ease-in-out;
 }
 
 .presentation .menu .recette:hover .checked i {
     transform: rotate(360deg);
-    transition: transform 750ms ease-in-out;
+    transition: 1s ease-in-out;
 }
 
-.presentation .entrees .recette:hover .prix {
 
-    transition: margin-right 750ms ease-in-out;
-}
 
-.presentation .btnmenus{
+.commandez  {
     display: flex;
     justify-content: center;
+  
 }
 
 
 
-@keyframes apparition{
-    from{opacity: 0;
+@keyframes apparition {
+    from {
+        opacity: 0;
         transform: translateX(100%);
     }
- 
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
@@ -501,6 +505,10 @@ font-size: small;
 
 @media screen and (min-width: 768px) {
 
+    .numeroTexte {
+        width: 30.3%;
+    }
+
     .ligne-fonctionement {
         flex-direction: row;
         display: flex;
@@ -520,10 +528,7 @@ font-size: small;
         padding: 0%;
     }
 
-    .fiche {
-        width: 490px;
-        height: 251px;
-    }
+ 
 
     .image {
         display: block;
@@ -546,7 +551,7 @@ font-size: small;
 
     }
 
-    h4 {
+    footer h4 {
         display: none;
     }
 
@@ -554,10 +559,5 @@ font-size: small;
         display: inline
     }
 
-    .menu {
-        flex-direction: row;
-
-
-    }
-
+ 
 }
