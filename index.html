@@ -10,6 +10,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <header>
@@ -18,9 +21,8 @@
   </div>
 </header>
 
-
 <body>
-  <div class="loader"> </div>
+  <div class="loader"> Chargement ..</div>
   <!---->
   <div class="lieu"> <i class="fa-solid fa-location-dot"> </i> Paris, Belleville</div>
   <!--Explorer-->
@@ -35,8 +37,6 @@
     </form>
   </div>
 
-
-
   <!--Fonctionnement-->
   <section class="fonctionement">
     <h1>Fonctionnement</h1>
@@ -44,27 +44,26 @@
       <div class="numeroTexte">
         <span class="numero"> 1 </span>
         <div class="btn-fonctionement">
-          <i class="fa-solid fa-mobile-screen"> </i>
+          <div class="icone"><i class="fa-solid fa-mobile-screen"> </i></div>
           &nbsp; Choisissez un restautant
         </div>
       </div>
       <div class="numeroTexte">
         <span class="numero"> 2 </span>
         <div class="btn-fonctionement">
-          <i class="fa-solid fa-list-ul"> </i>
+          <div class="icone"> <i class="fa-solid fa-list-ul"> </i></div>
           &nbsp; Composez votre menu
         </div>
       </div>
       <div class="numeroTexte">
         <span class="numero"> 3 </span>
         <div class="btn-fonctionement">
-          <i class="fa-solid fa-store"> </i>
+          <div class="icone"><i class="fa-solid fa-store"> </i></div>
           &nbsp; Degustez au restaurant
         </div>
       </div>
     </div>
   </section>
-
 
   <!-- Restaurants-->
   <section class="restaurants">
@@ -72,9 +71,7 @@
     <div class="fiche-restaurant">
       <div class="lignedestok">
 
-
         <!-- fiche Restaurant   1-->
-
         <article class="fiche">
           <a href="restaurants/menu-palette.html">
             <div class="image img-la-pallette">
@@ -84,8 +81,10 @@
             </div>
             <div class="detail">
               <div class="colonetexte">
-                <div class="restaurant-name">La palette du gout </div>
-                <div class="restaurant-location">Charonne</div>
+                <div class="restaurant-name">
+                  <h3>La palette du gout</h3>
+                </div>
+                <div class="restaurant-location">Ménilmontant</div>
               </div>
               <label class="coeur-lb" for="_1">
                 <input id="_1" class="coeur-cb" type="checkbox">
@@ -100,7 +99,6 @@
           </a>
         </article>
 
-
         <!-- fiche Restaurant   2-->
         <article class="fiche">
           <a href="restaurants/menu-note.html">
@@ -111,7 +109,9 @@
             </div>
             <div class="detail">
               <div class="colonetexte">
-                <div class="restaurant-name">La note enchantée</div>
+                <div class="restaurant-name">
+                  <h3>La note enchantée</h3>
+                </div>
                 <div class="restaurant-location">Charonne</div>
               </div>
               <label class="coeur-lb" for="_2">
@@ -128,16 +128,17 @@
         </article>
       </div>
 
-
       <div class="lignedestok">
-        <!-- fiche Restaurant    3-->
 
+        <!-- fiche Restaurant    3-->
         <article class="fiche">
           <a href="restaurants/menu-francaise.html">
             <div class="image img-la-francaise"></div>
             <div class="detail">
               <div class="colonetexte">
-                <div class="restaurant-name">À la française</div>
+                <div class="restaurant-name">
+                  <h3>À la française</h3>
+                </div>
                 <div class="restaurant-location">Cité Rouge </div>
               </div>
               <label class="coeur-lb" for="_3">
@@ -159,7 +160,9 @@
             <div class="image img-delice"></div>
             <div class="detail">
               <div class="colonetexte">
-                <div class="restaurant-name">Le délice des sens</div>
+                <div class="restaurant-name">
+                  <h3>Le délice des sens</h3>
+                </div>
                 <div class="restaurant-location">Folie-Méricourt </div>
               </div>
               <label class="coeur-lb" for="_4">
@@ -177,12 +180,9 @@
       </div>
     </div>
   </section>
-
 </body>
 
-
 <footer>
-
   <li><a>
       <h4>Ohmyfood</h4>
     </a></li>

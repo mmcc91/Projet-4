@@ -13,71 +13,67 @@
 </head>
 
 <header>
-  <div class="logo">
-    <a href="../index.html">
+    <a class="logo" href="../index.html">
       <i class="fa-solid fa-arrow-left"></i>
+      <div class="img-logo">
       <img src="/assets/images/logo/ohmyfood@2x.svg">
+      </div>
     </a>
-  </div>
 </header>
 
 
 
 <body>
-
-
   <section class="presentation">
-
-
     <div class="image img-la-note"></div>
-
-
-    <div class="premierligne">
-      <h4> La Note Enchantee </h4>
-      <label class="coeur-lb" for="_1">
-        <input id="_1" class="coeur-cb" type="checkbox">
-        <div class="coeur coeur-uc">
-          <i class="fa-regular fa-heart"></i>
-        </div>
-        <div class="coeur coeur-ch">
-          <i class="fa-solid fa-heart"></i>
-        </div>
-      </label>
-    </div>
-
-
-
     <section class="menu">
-
+      <div class="premierligne">
+        <h4> La Note Enchantee </h4>
+        <label class="coeur-lb" for="_1">
+          <input id="_1" class="coeur-cb" type="checkbox">
+          <div class="coeur coeur-uc">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="coeur coeur-ch">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+        </label>
+      </div>
       <section class="entrees">
-
         <!--menus containor-->
         <div class="titre-selection">Entrées</div>
         <!--RECETTE plats -->
         <article class="recette">
           <div class="nom">
-            Ravioles de foie gras
-            Accompagnées de leur crème à la truffe </div>
+            <h3>Ravioles de foie gras</h3>
+            Accompagnées de leur crème à la truffe
+          </div>
           <div class="prix"> 25 €</div>
           <div class="checked"> <i class="fa-solid fa-circle-check"></i> </div>
         </article>
         <article class="recette">
-          <div class="nom"> Caviar osciètre <br>
-            Sur blini à la farine de blé noir </div>
+          <div class="nom">
+            <h3>Caviar osciètre</h3>
+            Sur blini à la farine de blé noir
+          </div>
           <div class="prix"> 35€ </div>
           <div class="checked"><i class="fa-solid fa-circle-check"></i> </div>
         </article>
 
         <article class="recette">
-          <div class="nom"> Homard et espuma de potiron<br>
-            Marinés aux zestes d'orange </div>
+          <div class="nom">
+            <h3>Homard et espuma de potiron</h3>
+            Marinés aux zestes d'orange
+          </div>
           <div class="prix"> 20€ </div>
           <div class="checked"> <i class="fa-solid fa-circle-check"></i></div>
         </article>
         <article class="recette">
 
-          <div class="nom"> Foie gras de canard cuit entier<br>
-            Confiture de figue et pain toasté </div>
+          <div class="nom">
+            <h3>Foie gras de canard cuit entier</h3>
+            Confiture de figue et pain toasté
+          </div>
           <div class="prix"> 35 € </div>
           <div class="checked"> <i class="fa-solid fa-circle-check"></i> </div>
         </article>
@@ -85,9 +81,10 @@
       </section>
 
       <section class="plats">
+        <div class="titre-selection">Plats</div>
         <article class="recette">
           <div class="nom">
-            Noix de coquilles Saint-Jacques<br>
+            <h3>Noix de coquilles Saint-Jacques</h3>
             Sur lit de purée de céleri-rave
           </div>
           <div class="prix"> 40 €</div>
@@ -95,14 +92,15 @@
         </article>
         <article class="recette">
           <div class="nom">
-            Langoustine poêlée<br>
-            Purée de patate douce </div>
+            <h3> Langoustine poêlée</h3>
+            Purée de patate douce
+          </div>
           <div class="prix"> 35 € </div>
           <div class="checked"> <i class="fa-solid fa-circle-check"></i> </div>
         </article>
         <article class="recette">
           <div class="nom">
-            Mijoté de queue de bœuf <br>
+            <h3>Mijoté de queue de bœuf</h3>
             Et riz sauvage aux zestes de citron
           </div>
           <div class="prix">44 € </div>
@@ -111,26 +109,33 @@
       </section>
 
       <section class="desserts">
+        <div class="titre-selection">Desserts</div>
         <article class="recette">
-          <div class="nom">Macaron noisette et chocolat<br>
-            Glace au caramel brun et sel de Guérande </div>
+          <div class="nom">
+            <h3>Macaron noisette et chocolat</h3>
+            Glace au caramel brun et sel de Guérande
+          </div>
           <div class="prix">18 € </div>
           <div class="checked"> <i class="fa-solid fa-circle-check"></i> </div>
         </article>
         <article class="recette">
-          <div class="nom">Baba au rhum revisité <br>
-            Avec son coulis de citron </div>
+          <div class="nom">
+            <h3>Baba au rhum revisité</h3>
+            Avec son coulis de citron
+          </div>
           <div class="prix">22 € </div>
           <div class="checked"> <i class="fa-solid fa-circle-check"></i> </div>
         </article>
         <article class="recette">
-          <div class="nom"> Tarte au citron meringuée <br>
-            Déstructurée</div>
+          <div class="nom">
+            <h3>Tarte au citron meringuée </h3>
+            Déstructurée
+          </div>
           <div class="prix">23 € </div>
           <div class="checked"> <i class="fa-solid fa-circle-check"></i> </div>
         </article>
       </section>
-      <form>
+      <form class="commandez">
         <input class="btnmenus" type="button" value="Commandez" />
       </form>
     </section>
@@ -140,10 +145,10 @@
   <li><a>
       <h4>Ohmyfood</h4>
     </a></li>
-  <li><a href="#" ><i class="fa-solid fa-utensils" style="color: white;"> </i> Proposer un restaurant</a></li>
-  <li><a href="#" ><i class="fa-solid fa-handshake-angle" style="color: white;"> </i> Devenir partenaire</a></li>
-  <li><a href="#" >Mentions légales</a></li>
-  <li><a href="mailto:ohmyfood@contact.com" >Contact</a></li>
+  <li><a href="#"><i class="fa-solid fa-utensils" style="color: white;"> </i> Proposer un restaurant</a></li>
+  <li><a href="#"><i class="fa-solid fa-handshake-angle" style="color: white;"> </i> Devenir partenaire</a></li>
+  <li><a href="#">Mentions légales</a></li>
+  <li><a href="mailto:ohmyfood@contact.com">Contact</a></li>
   <li><a>
       <h5>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Ohmyfood</h5>
     </a></li>
