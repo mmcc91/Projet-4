@@ -11,11 +11,11 @@
 * {
     margin: 0;
     padding: 0;
-
 }
 
 h1,
-h3 {
+h3,
+h2 {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -29,12 +29,12 @@ a {
 /* Page Index  */
 .restaurants {
     background-color: var(--Gris);
-    padding: 3%;
+    padding: 17%;
 }
 
 .lieu {
     background-color: lightgrey;
-    padding: 10px;
+    padding: 4%;
     text-align: center;
     font-family: 'Roboto', sans-serif;
 }
@@ -42,17 +42,25 @@ a {
 .explorer {
     text-align: center;
     background-color: var(--Gris);
-    padding: 1%;
+    padding: 12%;
 }
-
+.explorer h1{
+    font-size:x-large;
+    gap: 10px;
+}
+.explorer h2{
+    font-weight: 100;
+    font-size:large;
+}
 .btnmenus {
     border-radius: 35px;
     background: linear-gradient(#FF79DA, #9356DC);
-    width: 200px;
+    width: 80%;
     height: 45px;
     text-align: center;
     color: white;
     margin: 3%;
+    margin-top: 10%;
 
     &:hover {
         opacity: 80%;
@@ -61,7 +69,8 @@ a {
 
 /*Fonctioneemnt*/
 .fonctionement {
-    padding: 3%;
+    padding-top: 15%;
+    padding-bottom: 5%;
     justify-content: baseline;
 }
 
@@ -70,6 +79,12 @@ a {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.fonctionement h1 {
+    padding-left: 3%;
 }
 
 .btn-fonctionement {
@@ -83,6 +98,7 @@ a {
     background-color: var(--Gris);
     width: 322px;
     height: 72px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .icone:hover {
@@ -108,11 +124,13 @@ a {
     border-radius: 50%;
     color: #f6f6f6;
     background: var(--Primary);
+    position: absolute;
 }
 
 /*Restaurant*/
 .restaurants {
-    padding: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 .fiche {
@@ -124,6 +142,7 @@ a {
     height: 100%;
     box-sizing: border-box;
     margin-top: 10px;
+    padding-bottom: 5%;
 }
 
 .detail {
@@ -135,6 +154,10 @@ a {
 
 .restaurant-name {
     font-weight: bold;
+}
+
+.restaurants h1 {
+    padding-bottom: 3%;
 }
 
 /*Encadrer New*/
@@ -153,12 +176,13 @@ a {
     margin-right: 1%;
     margin-bottom: auto;
 }
+
 .image {
     display: flex;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 150px;
+    height: 175px;
     border-radius: 20px 20px 0 0;
 }
 
@@ -232,9 +256,6 @@ input.coeur-cb:checked~.coeur-uc {
     -webkit-text-fill-color: transparent;
 }
 
-
-
-
 /*Footer*/
 footer {
     background-color: #353535;
@@ -244,10 +265,14 @@ footer {
     padding-left: 3%;
     font-weight: 100;
 
+
 }
+
 footer a {
     color: white;
+    font-family: 'Roboto', sans-serif;
 }
+
 h4 {
 
     font-family: 'Shrikhand', serif;
@@ -267,6 +292,9 @@ li {
     list-style-type: none;
 }
 
+.restaurant-location {
+    font-family: 'Roboto', sans-serif;
+}
 
 .loader {
     position: fixed;
@@ -312,7 +340,8 @@ li {
 
 i .fa-solid .fa-arrow-left {
     flex-direction: column;
-    width: 5%;
+    width: 10%;
+
 }
 
 .logo img {
@@ -321,13 +350,17 @@ i .fa-solid .fa-arrow-left {
 }
 
 .img-logo {
-    width: 95%;
+    width: 90%;
+
 }
 
 
 .presentation .image {
     border-radius: 0%;
     padding-left: 10px;
+    height: 175px;
+    object-fit: cover;
+    background-image: center;
 }
 
 /*1erligne*/
@@ -341,7 +374,7 @@ i .fa-solid .fa-arrow-left {
 
 .menu .premierligne h4 {
     padding-left: 10px;
-
+    font-size: larger;
 }
 
 .menu .premierligne label {
@@ -352,15 +385,13 @@ i .fa-solid .fa-arrow-left {
 
 .menu {
     background-color: #F6F6F6;
-    padding-top: 5%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-content: center;
-    text-align: center;
-    border-radius: 15px 15px 0 0;
-    padding-top: 3%;
-    margin-top: -3%;
+    justify-content: space-between;
+    padding-left: 20%;
+    padding-right: 20%;
+    border-radius: 40px 40px 0 0;
 
 }
 
@@ -373,6 +404,8 @@ i .fa-solid .fa-arrow-left {
     margin-left: 10px;
     font-family: 'Roboto', sans-serif;
     font-weight: 200;
+    padding: 10px;
+
 }
 
 /*L'ensemble des plats*/
@@ -381,15 +414,18 @@ i .fa-solid .fa-arrow-left {
 .recette {
     display: flex;
     flex-direction: row;
-    box-shadow: 20px 20px 10px 0 lightgrey;
-    border-radius: 15px;
-    justify-content: space-between;
-    cursor: pointer;
-    margin: 3%;
+    font-family: 'Roboto', sans-serif;
     background-color: #FFFFFF;
+    box-shadow: 10px 10px 10px 0 lightgrey;
+    border-radius: 15px;
+    margin: 3%;
+    cursor: pointer;
     position: relative;
     text-overflow: ellipsis;
     overflow: hidden;
+    align-content: center;
+    text-align: center;
+    max-width: 349px;
 }
 
 /**  nom du plat et ingredient  **/
@@ -409,6 +445,7 @@ i .fa-solid .fa-arrow-left {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+
 }
 
 /**  parti prix et checked ANIMATION  **/
@@ -449,7 +486,7 @@ i .fa-solid .fa-arrow-left {
 }
 
 .presentation .menu .recette:hover .checked i {
-    transform: rotate(360deg);
+
     transition: transform 2s ease-in-out;
 }
 
@@ -488,7 +525,6 @@ i .fa-solid .fa-arrow-left {
 @keyframes animationchecked {
     from {
         visibility: hidden;
-        rotate: 180;
         opacity: 0;
     }
 
@@ -500,24 +536,71 @@ i .fa-solid .fa-arrow-left {
 
 /********************************************** MEDIA QUERIES*******************************************/
 @media screen and (min-width: 768px) {
+    .body {
+        max-width: 1055px;
+    }
+
+    .logo {
+        padding: 2%;
+    }
+
+    .lieu {
+        padding: 1%;
+        gap: 10px;
+    }
+
+    .btnmenus {
+        margin-top: 0%;
+        width: 200px;
+    }
+
+    .explorer {
+        padding: 3%;
+        gap: 15px;
+        display: flex;
+        flex-direction: column;
+    }
 
     .numeroTexte {
         width: 30.3%;
+
+    }
+
+    .fonctionement {
+    
+        padding-top: 1%;
+        padding-bottom: 1%;
+        max-width: 1055px;
+        margin: auto;
     }
 
     .ligne-fonctionement {
+        padding: 0;
         flex-direction: row;
         display: flex;
+        padding-left: 5%;
+    }
+
+    .restaurants {
+        padding: 2%;
+    }
+
+    .restaurants h1 {
+        max-width: 1055px;
+        margin: auto;
     }
 
     .fiche-restaurant {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
+        max-width: 1055px;
+        margin: auto;
     }
 
     .fiche {
-        margin: 10px;
+        gap: 40px;
+        padding: 0%;
     }
 
     .lignedestok {
@@ -525,6 +608,7 @@ i .fa-solid .fa-arrow-left {
         flex-direction: row;
         justify-content: space-evenly;
         padding: 0%;
+        gap: 50px;
     }
 
     .image {
@@ -545,14 +629,29 @@ i .fa-solid .fa-arrow-left {
         display: inline
     }
 
-    .menu {
-        margin: 0 110px;
-        padding: 3%;
-        margin-top: -3%;
-        max-width: 1240px;
-        align-content: center;
+    .premierligne {
+        justify-content: center;
+        gap: 10px;
     }
 
+    .menu {
+        margin: auto;
+        padding: 3%;
+        margin-top: -3%;
+        align-content: center;
+        text-align: center;
+    }
+
+    .recette {
+        max-width: 1055px;
+    }
+
+    .presentation .image {
+        height: 383px;
+        max-width: 1440px;
+        object-fit: contain;
+
+    }
 
     footer {
         padding-top: 3%;
