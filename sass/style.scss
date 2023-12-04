@@ -44,18 +44,22 @@ a {
     background-color: var(--Gris);
     padding: 12%;
 }
-.explorer h1{
-    font-size:x-large;
+
+.explorer h1 {
+    font-size: x-large;
     gap: 10px;
 }
-.explorer h2{
+
+.explorer h2 {
     font-weight: 100;
-    font-size:large;
+    font-size: large;
 }
+
 .btnmenus {
     border-radius: 35px;
     background: linear-gradient(#FF79DA, #9356DC);
-    width: 80%;
+    max-width: 218px;
+    min-width: 186px;
     height: 45px;
     text-align: center;
     color: white;
@@ -142,14 +146,15 @@ a {
     height: 100%;
     box-sizing: border-box;
     margin-top: 10px;
-    padding-bottom: 5%;
+
+
 }
 
 .detail {
     padding-left: 3%;
     display: flex;
     justify-content: space-between;
-    padding: 10px 10px;
+    padding: 5%;
 }
 
 .restaurant-name {
@@ -185,6 +190,8 @@ a {
     height: 175px;
     border-radius: 20px 20px 0 0;
 }
+
+
 
 .img-la-pallette {
     background-image: url("images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
@@ -335,7 +342,7 @@ li {
     text-align: center;
     align-items: center;
     justify-content: center;
-    padding: 3%;
+    padding: 4%;
 }
 
 i .fa-solid .fa-arrow-left {
@@ -350,7 +357,7 @@ i .fa-solid .fa-arrow-left {
 }
 
 .img-logo {
-    width: 90%;
+    width: 100%;
 
 }
 
@@ -358,9 +365,7 @@ i .fa-solid .fa-arrow-left {
 .presentation .image {
     border-radius: 0%;
     padding-left: 10px;
-    height: 175px;
-    object-fit: cover;
-    background-image: center;
+    height: 300px;
 }
 
 /*1erligne*/
@@ -370,16 +375,20 @@ i .fa-solid .fa-arrow-left {
     text-align: center;
     justify-content: space-between;
     padding-bottom: 10px;
+
 }
 
 .menu .premierligne h4 {
-    padding-left: 10px;
-    font-size: larger;
+    padding-left: 20px;
+    font-size: xx-large;
+    padding-top: 15px;
 }
 
 .menu .premierligne label {
     padding-right: 10px;
 }
+
+
 
 /* Menu restaurant */
 
@@ -389,9 +398,11 @@ i .fa-solid .fa-arrow-left {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-left: 20%;
-    padding-right: 20%;
+    margin: auto;
     border-radius: 40px 40px 0 0;
+    margin-top: -78px;
+    padding-top: 3%;
+
 
 }
 
@@ -404,7 +415,7 @@ i .fa-solid .fa-arrow-left {
     margin-left: 10px;
     font-family: 'Roboto', sans-serif;
     font-weight: 200;
-    padding: 10px;
+
 
 }
 
@@ -418,14 +429,17 @@ i .fa-solid .fa-arrow-left {
     background-color: #FFFFFF;
     box-shadow: 10px 10px 10px 0 lightgrey;
     border-radius: 15px;
-    margin: 3%;
+    margin: 4%;
     cursor: pointer;
     position: relative;
     text-overflow: ellipsis;
     overflow: hidden;
     align-content: center;
     text-align: center;
-    max-width: 349px;
+    max-width: 1055px;
+
+
+
 }
 
 /**  nom du plat et ingredient  **/
@@ -436,8 +450,9 @@ i .fa-solid .fa-arrow-left {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    font-size: small;
-    padding: 10px;
+    font-weight: 100;
+    padding: 15px;
+
 }
 
 .nom h3 {
@@ -445,6 +460,8 @@ i .fa-solid .fa-arrow-left {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+    font-weight: 500;
+    font-size: larger;
 
 }
 
@@ -469,6 +486,7 @@ i .fa-solid .fa-arrow-left {
     align-items: center;
     animation-name: animationchecked;
     color: white;
+
     /* Nom de l'animation créée avec @keyframes */
 }
 
@@ -493,6 +511,7 @@ i .fa-solid .fa-arrow-left {
 .commandez {
     display: flex;
     justify-content: center;
+    padding-bottom: 5%;
 
 }
 
@@ -501,14 +520,20 @@ i .fa-solid .fa-arrow-left {
 /* Animation debut de page slide des plats */
 .entrees {
     animation: apparition 1s backwards;
+    padding-top: 10PX;
+    padding-bottom: 10PX;
 }
 
 .plats {
     animation: apparition 1.5s backwards;
+    padding-top: 20PX;
+    padding-bottom: 10PX;
 }
 
 .desserts {
     animation: apparition 2s backwards;
+    padding-top: 20PX;
+    padding-bottom: 10PX;
 }
 
 @keyframes apparition {
@@ -561,15 +586,21 @@ i .fa-solid .fa-arrow-left {
         flex-direction: column;
     }
 
+    .explorer h1{
+        font-size:40px;
+
+        font-weight: 900;
+    }
+
     .numeroTexte {
         width: 30.3%;
 
     }
 
     .fonctionement {
-    
-        padding-top: 1%;
-        padding-bottom: 1%;
+
+        padding-top: 2%;
+        padding-bottom: 2%;
         max-width: 1055px;
         margin: auto;
     }
@@ -588,6 +619,7 @@ i .fa-solid .fa-arrow-left {
     .restaurants h1 {
         max-width: 1055px;
         margin: auto;
+        padding: unset;
     }
 
     .fiche-restaurant {
@@ -601,14 +633,19 @@ i .fa-solid .fa-arrow-left {
     .fiche {
         gap: 40px;
         padding: 0%;
+        margin: 3%;
     }
+
+.detail{
+    padding: 3%;
+}
 
     .lignedestok {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         padding: 0%;
-        gap: 50px;
+     
     }
 
     .image {
@@ -635,16 +672,27 @@ i .fa-solid .fa-arrow-left {
     }
 
     .menu {
-        margin: auto;
+
         padding: 3%;
         margin-top: -3%;
         align-content: center;
         text-align: center;
+        max-width: 1055px;
+
     }
 
     .recette {
-        max-width: 1055px;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 1%;
+        max-width: 634px;
     }
+
+    .titre-selection {
+        margin-left: 200px;
+       margin-bottom: 20px;
+    }
+
 
     .presentation .image {
         height: 383px;
@@ -652,6 +700,10 @@ i .fa-solid .fa-arrow-left {
         object-fit: contain;
 
     }
+
+.commandez{
+    padding-bottom: 0%;
+}
 
     footer {
         padding-top: 3%;

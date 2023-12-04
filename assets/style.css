@@ -58,7 +58,8 @@ a {
 .btnmenus {
   border-radius: 35px;
   background: linear-gradient(#FF79DA, #9356DC);
-  width: 80%;
+  max-width: 218px;
+  min-width: 186px;
   height: 45px;
   text-align: center;
   color: white;
@@ -144,14 +145,13 @@ a {
   height: 100%;
   box-sizing: border-box;
   margin-top: 10px;
-  padding-bottom: 5%;
 }
 
 .detail {
   padding-left: 3%;
   display: flex;
   justify-content: space-between;
-  padding: 10px 10px;
+  padding: 5%;
 }
 
 .restaurant-name {
@@ -325,7 +325,7 @@ li {
   text-align: center;
   align-items: center;
   justify-content: center;
-  padding: 3%;
+  padding: 4%;
 }
 
 i .fa-solid .fa-arrow-left {
@@ -339,16 +339,13 @@ i .fa-solid .fa-arrow-left {
 }
 
 .img-logo {
-  width: 90%;
+  width: 100%;
 }
 
 .presentation .image {
   border-radius: 0%;
   padding-left: 10px;
-  height: 175px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  background-image: center;
+  height: 300px;
 }
 
 /*1erligne*/
@@ -361,8 +358,9 @@ i .fa-solid .fa-arrow-left {
 }
 
 .menu .premierligne h4 {
-  padding-left: 10px;
-  font-size: larger;
+  padding-left: 20px;
+  font-size: xx-large;
+  padding-top: 15px;
 }
 
 .menu .premierligne label {
@@ -376,9 +374,10 @@ i .fa-solid .fa-arrow-left {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-left: 20%;
-  padding-right: 20%;
+  margin: auto;
   border-radius: 40px 40px 0 0;
+  margin-top: -78px;
+  padding-top: 3%;
 }
 
 /*titre selection */
@@ -390,7 +389,6 @@ i .fa-solid .fa-arrow-left {
   margin-left: 10px;
   font-family: "Roboto", sans-serif;
   font-weight: 200;
-  padding: 10px;
 }
 
 /*L'ensemble des plats*/
@@ -402,14 +400,14 @@ i .fa-solid .fa-arrow-left {
   background-color: #FFFFFF;
   box-shadow: 10px 10px 10px 0 lightgrey;
   border-radius: 15px;
-  margin: 3%;
+  margin: 4%;
   cursor: pointer;
   position: relative;
   text-overflow: ellipsis;
   overflow: hidden;
   align-content: center;
   text-align: center;
-  max-width: 349px;
+  max-width: 1055px;
 }
 
 /**  nom du plat et ingredient  **/
@@ -420,8 +418,8 @@ i .fa-solid .fa-arrow-left {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  font-size: small;
-  padding: 10px;
+  font-weight: 100;
+  padding: 15px;
 }
 
 .nom h3 {
@@ -429,6 +427,8 @@ i .fa-solid .fa-arrow-left {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  font-weight: 500;
+  font-size: larger;
 }
 
 /**  parti prix et checked ANIMATION  **/
@@ -474,19 +474,26 @@ i .fa-solid .fa-arrow-left {
 .commandez {
   display: flex;
   justify-content: center;
+  padding-bottom: 5%;
 }
 
 /* Animation debut de page slide des plats */
 .entrees {
   animation: apparition 1s backwards;
+  padding-top: 10PX;
+  padding-bottom: 10PX;
 }
 
 .plats {
   animation: apparition 1.5s backwards;
+  padding-top: 20PX;
+  padding-bottom: 10PX;
 }
 
 .desserts {
   animation: apparition 2s backwards;
+  padding-top: 20PX;
+  padding-bottom: 10PX;
 }
 
 @keyframes apparition {
@@ -530,12 +537,16 @@ i .fa-solid .fa-arrow-left {
     display: flex;
     flex-direction: column;
   }
+  .explorer h1 {
+    font-size: 40px;
+    font-weight: 900;
+  }
   .numeroTexte {
     width: 30.3%;
   }
   .fonctionement {
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     max-width: 1055px;
     margin: auto;
   }
@@ -551,6 +562,7 @@ i .fa-solid .fa-arrow-left {
   .restaurants h1 {
     max-width: 1055px;
     margin: auto;
+    padding: unset;
   }
   .fiche-restaurant {
     display: flex;
@@ -562,13 +574,16 @@ i .fa-solid .fa-arrow-left {
   .fiche {
     gap: 40px;
     padding: 0%;
+    margin: 3%;
+  }
+  .detail {
+    padding: 3%;
   }
   .lignedestok {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     padding: 0%;
-    gap: 50px;
   }
   .image {
     display: block;
@@ -589,20 +604,30 @@ i .fa-solid .fa-arrow-left {
     gap: 10px;
   }
   .menu {
-    margin: auto;
     padding: 3%;
     margin-top: -3%;
     align-content: center;
     text-align: center;
+    max-width: 1055px;
   }
   .recette {
-    max-width: 1055px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 1%;
+    max-width: 634px;
+  }
+  .titre-selection {
+    margin-left: 200px;
+    margin-bottom: 20px;
   }
   .presentation .image {
     height: 383px;
     max-width: 1440px;
     -o-object-fit: contain;
        object-fit: contain;
+  }
+  .commandez {
+    padding-bottom: 0%;
   }
   footer {
     padding-top: 3%;
