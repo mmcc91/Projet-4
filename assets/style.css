@@ -1,4 +1,3 @@
-@charset "UTF-8";
 :root {
   /*Couleurs*/
   --Gris: #F3F3F3;
@@ -74,7 +73,6 @@ a {
 .fonctionement {
   padding-top: 15%;
   padding-bottom: 5%;
-  justify-content: baseline;
 }
 
 .ligne-fonctionement {
@@ -248,7 +246,6 @@ input.coeur-cb:checked ~ .coeur-uc {
   height: 17px;
   -webkit-text-fill-color: transparent;
   background: radial-gradient(#FF79DA, #9356DC);
-  background-color: radial-gradient(#FF79DA, #9356DC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -450,9 +447,7 @@ i .fa-solid .fa-arrow-left {
   overflow: hidden;
   text-align: center;
   align-items: center;
-  animation-name: animationchecked;
   color: white;
-  /* Nom de l'animation créée avec @keyframes */
 }
 
 .presentation .menu .recette:hover .checked {
@@ -502,16 +497,6 @@ i .fa-solid .fa-arrow-left {
     transform: translateX(100%);
   }
   100% {
-    opacity: 1;
-  }
-}
-@keyframes animationchecked {
-  from {
-    visibility: hidden;
-    opacity: 0;
-  }
-  to {
-    visibility: visible;
     opacity: 1;
   }
 }
@@ -572,9 +557,8 @@ i .fa-solid .fa-arrow-left {
     margin: auto;
   }
   .fiche {
-    gap: 40px;
     padding: 0%;
-    margin: 3%;
+    margin: 4%;
   }
   .detail {
     padding: 3%;

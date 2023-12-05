@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<script src="https://kit.fontawesome.com/71b1a4a41e.js" crossorigin="anonymous"></script>
+
 
 <head>
   <meta charset="utf-8">
@@ -10,33 +10,33 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/71b1a4a41e.js" crossorigin="anonymous"></script>
 </head>
 
-<header>
-  <a class="logo" href="../index.html">
-    <i class="fa-solid fa-arrow-left"></i>
-    <div class="img-logo"><img src="/assets/images/logo/ohmyfood@2x.svg">
-    </div>
-  </a>
-</header>
-
 <body>
+  <header>
+    <a class="logo" href="../index.html">
+      <i class="fa-solid fa-arrow-left"></i>
+      <div class="img-logo"><img src="/assets/images/logo/ohmyfood@2x.svg" alt="logo">
+      </div>
+    </a>
+  </header>
   <!--section image et nom restaurant-->
   <section class="presentation">
     <div class="image img-la-pallette"></div>
 
     <!--menus containor menu-->
-    <div class="menu">
+    <section class="menu">
       <div class="premierligne">
         <h4>La palette du goût</h4>
         <label class="coeur-lb" for="_1">
           <input id="_1" class="coeur-cb" type="checkbox">
-          <div class="coeur coeur-uc">
+          <span class="coeur coeur-uc">
             <i class="fa-regular fa-heart"></i>
-          </div>
-          <div class="coeur coeur-ch">
+          </span>
+          <span class="coeur coeur-ch">
             <i class="fa-solid fa-heart"></i>
-          </div>
+          </span>
         </label>
       </div>
 
@@ -47,7 +47,7 @@
         <article class="recette">
           <!--NOM- plats-title -->
           <div class="nom">
-            <h3>Fricassée d'escargots</h3>Au piment d'Espelette 
+            <h3>Fricassée d'escargots</h3>Au piment d'Espelette
           </div>
           <!--PRIX PRIXplats-->
           <div class="prix"> 25€ </div>
@@ -129,26 +129,27 @@
           <div class="checked"> <i class="fa-solid fa-circle-check"></i></div>
         </article>
       </section>
-    
+    </section>
     <form class="commandez">
       <input class="btnmenus" type="button" value="Commandez" />
     </form>
+
+
   </section>
-</div>
+    <footer>
+      <ol>
+        <li><a>
+            <h4>Ohmyfood</h4>
+          </a></li>
+        <li><a href="#"><i class="fa-solid fa-utensils" style="color: white;"> </i> Proposer un restaurant</a></li>
+        <li><a href="#"><i class="fa-solid fa-handshake-angle" style="color: white;"> </i> Devenir partenaire</a></li>
+        <li><a href="#">Mentions légales</a></li>
+        <li><a href="mailto:ohmyfood@contact.com">Contact</a></li>
+        <li><a>
+            <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ohmyfood</h5>
+          </a></li>
+      </ol>
+    </footer>
 </body>
-<footer>
 
-  <li><a>
-      <h4>Ohmyfood</h4>
-    </a></li>
-  <li><a href="#"><i class="fa-solid fa-utensils" style="color: white;"> </i> Proposer un restaurant</a></li>
-  <li><a href="#"><i class="fa-solid fa-handshake-angle" style="color: white;"> </i> Devenir partenaire</a></li>
-  <li><a href="#">Mentions légales</a></li>
-  <li><a href="mailto:ohmyfood@contact.com">Contact</a></li>
-  <li><a>
-      <h5>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Ohmyfood</h5>
-    </a></li>
-
-</footer>
-
-</html
+</html>

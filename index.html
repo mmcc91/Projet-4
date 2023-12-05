@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="fr">
-<script src="https://kit.fontawesome.com/71b1a4a41e.js" crossorigin="anonymous"></script>
+
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,15 +13,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/71b1a4a41e.js" crossorigin="anonymous"></script>
 </head>
 
-<header>
-  <div class="logo">
-    <img src="assets/images/logo/ohmyfood@2x.svg">
-  </div>
-</header>
+
 
 <body>
+  <header>
+    <div class="logo">
+      <img src="assets/images/logo/ohmyfood@2x.svg" alt="logo">
+    </div>
+  </header>
+
   <div class="loader"> Chargement ..</div>
   <!---->
   <div class="lieu"> <i class="fa-solid fa-location-dot"> </i> Paris, Belleville</div>
@@ -30,7 +33,7 @@
     <!---->
     <h1>Réservez le menu qui
       vous convient</h1>
-   <h2> Découvrez des restaurants d’exception, sélectionnés par nos soins.</h2>
+    <h2> Découvrez des restaurants d’exception, sélectionnés par nos soins.</h2>
     <!--bouton exporer restaurant-->
     <form>
       <input class="btnmenus" type="button" value="Explorer nos restaurants" />
@@ -79,24 +82,27 @@
                 <div class="texteNew"> nouveau</div>
               </div>
             </div>
-            <div class="detail">
-              <div class="colonetexte">
-                <div class="restaurant-name">
-                  <h3>La palette du gout</h3>
-                </div>
-                <div class="restaurant-location">Ménilmontant</div>
-              </div>
-              <label class="coeur-lb" for="_1">
-                <input id="_1" class="coeur-cb" type="checkbox">
-                <div class="coeur coeur-uc">
-                  <i class="fa-regular fa-heart"></i>
-                </div>
-                <div class="coeur coeur-ch">
-                  <i class="fa-solid fa-heart"></i>
-                </div>
-              </label>
-            </div>
           </a>
+          <div class="detail">
+            <div class="colonetexte">
+              <div class="restaurant-name">
+                <h3>La palette du gout</h3>
+              </div>
+              <div class="restaurant-location">Ménilmontant</div>
+            </div>
+
+            <label class="coeur-lb" for="_1">
+              <input id="_1" class="coeur-cb" type="checkbox">
+              <span class="coeur coeur-uc">
+                <i class="fa-regular fa-heart"></i>
+              </span>
+              <span class="coeur coeur-ch">
+                <i class="fa-solid fa-heart"></i>
+              </span>
+            </label>
+
+          </div>
+
         </article>
 
         <!-- fiche Restaurant   2-->
@@ -107,25 +113,28 @@
                 <div class="texteNew"> nouveau</div>
               </div>
             </div>
-            <div class="detail">
-              <div class="colonetexte">
-                <div class="restaurant-name">
-                  <h3>La note enchantée</h3>
-                </div>
-                <div class="restaurant-location">Charonne</div>
-              </div>
-              <label class="coeur-lb" for="_2">
-                <input id="_2" class="coeur-cb" type="checkbox">
-                <div class="coeur coeur-uc">
-                  <i class="fa-regular fa-heart"></i>
-                </div>
-                <div class="coeur coeur-ch">
-                  <i class="fa-solid fa-heart"></i>
-                </div>
-              </label>
-            </div>
           </a>
+          <div class="detail">
+            <div class="colonetexte">
+              <div class="restaurant-name">
+                <h3>La note enchantée</h3>
+              </div>
+              <div class="restaurant-location">Charonne</div>
+            </div>
+            <label class="coeur-lb" for="_2">
+              <input id="_2" class="coeur-cb" type="checkbox">
+              <span class="coeur coeur-uc">
+                <i class="fa-regular fa-heart"></i>
+              </span>
+              <span class="coeur coeur-ch">
+                <i class="fa-solid fa-heart"></i>
+              </span>
+            </label>
+          </div>
+
         </article>
+
+
       </div>
 
       <div class="lignedestok">
@@ -134,55 +143,58 @@
         <article class="fiche">
           <a href="restaurants/menu-francaise.html">
             <div class="image img-la-francaise"></div>
-            <div class="detail">
-              <div class="colonetexte">
-                <div class="restaurant-name">
-                  <h3>À la française</h3>
-                </div>
-                <div class="restaurant-location">Cité Rouge </div>
-              </div>
-              <label class="coeur-lb" for="_3">
-                <input id="_3" class="coeur-cb" type="checkbox">
-                <div class="coeur coeur-uc">
-                  <i class="fa-regular fa-heart"></i>
-                </div>
-                <div class="coeur coeur-ch">
-                  <i class="fa-solid fa-heart"></i>
-                </div>
-              </label>
-            </div>
           </a>
+          <div class="detail">
+            <div class="colonetexte">
+              <div class="restaurant-name">
+                <h3>À la française</h3>
+              </div>
+              <div class="restaurant-location">Cité Rouge </div>
+            </div>
+            <label class="coeur-lb" for="_3">
+              <input id="_3" class="coeur-cb" type="checkbox">
+              <span class="coeur coeur-uc">
+                <i class="fa-regular fa-heart"></i>
+              </span>
+              <span class="coeur coeur-ch">
+                <i class="fa-solid fa-heart"></i>
+              </span>
+            </label>
+          </div>
+
         </article>
 
         <!-- fiche Restaurant   4-->
         <article class="fiche">
           <a href="restaurants/menu-delice.html">
             <div class="image img-delice"></div>
-            <div class="detail">
-              <div class="colonetexte">
-                <div class="restaurant-name">
-                  <h3>Le délice des sens</h3>
-                </div>
-                <div class="restaurant-location">Folie-Méricourt </div>
-              </div>
-              <label class="coeur-lb" for="_4">
-                <input id="_4" class="coeur-cb" type="checkbox">
-                <div class="coeur coeur-uc">
-                  <i class="fa-regular fa-heart"></i>
-                </div>
-                <div class="coeur coeur-ch">
-                  <i class="fa-solid fa-heart"></i>
-                </div>
-              </label>
-            </div>
           </a>
+          <div class="detail">
+            <div class="colonetexte">
+              <div class="restaurant-name">
+                <h3>Le délice des sens</h3>
+              </div>
+              <div class="restaurant-location">Folie-Méricourt </div>
+            </div>
+            <label class="coeur-lb" for="_4">
+              <input id="_4" class="coeur-cb" type="checkbox">
+              <span class="coeur coeur-uc">
+                <i class="fa-regular fa-heart"></i>
+              </span>
+              <span class="coeur coeur-ch">
+                <i class="fa-solid fa-heart"></i>
+              </span>
+            </label>
+          </div>
+
         </article>
       </div>
     </div>
   </section>
-</body>
+
 
 <footer>
+  <ol>
   <li><a>
       <h4>Ohmyfood</h4>
     </a></li>
@@ -191,9 +203,9 @@
   <li><a href="#">Mentions légales</a></li>
   <li><a href="mailto:ohmyfood@contact.com">Contact</a></li>
   <li><a>
-      <h5>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Ohmyfood</h5>
+      <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ohmyfood</h5>
     </a></li>
-
+</ol>
 </footer>
-
+</body>
 </html>

@@ -6,6 +6,7 @@
     --Blue: #89C8FA;
     --Blue2: #003A68;
     --Primary: #9356DC;
+ 
 }
 
 * {
@@ -75,7 +76,7 @@ a {
 .fonctionement {
     padding-top: 15%;
     padding-bottom: 5%;
-    justify-content: baseline;
+
 }
 
 .ligne-fonctionement {
@@ -257,8 +258,7 @@ input.coeur-cb:checked~.coeur-uc {
     width: $coeur-width;
     height: $coeur-height;
     -webkit-text-fill-color: transparent;
-    background: radial-gradient((#FF79DA), (#9356DC));
-    background-color: radial-gradient((#FF79DA), (#9356DC));
+    background: radial-gradient(#FF79DA,#9356DC);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -271,8 +271,6 @@ footer {
     padding-top: 1%;
     padding-left: 3%;
     font-weight: 100;
-
-
 }
 
 footer a {
@@ -484,12 +482,8 @@ i .fa-solid .fa-arrow-left {
     overflow: hidden;
     text-align: center;
     align-items: center;
-    animation-name: animationchecked;
     color: white;
-
-    /* Nom de l'animation créée avec @keyframes */
 }
-
 
 .presentation .menu .recette:hover .checked {
     justify-content: center;
@@ -547,17 +541,6 @@ i .fa-solid .fa-arrow-left {
     }
 }
 
-@keyframes animationchecked {
-    from {
-        visibility: hidden;
-        opacity: 0;
-    }
-
-    to {
-        visibility: visible;
-        opacity: 1;
-    }
-}
 
 /********************************************** MEDIA QUERIES*******************************************/
 @media screen and (min-width: 768px) {
@@ -586,8 +569,8 @@ i .fa-solid .fa-arrow-left {
         flex-direction: column;
     }
 
-    .explorer h1{
-        font-size:40px;
+    .explorer h1 {
+        font-size: 40px;
 
         font-weight: 900;
     }
@@ -631,21 +614,20 @@ i .fa-solid .fa-arrow-left {
     }
 
     .fiche {
-        gap: 40px;
         padding: 0%;
-        margin: 3%;
+        margin: 4%;
     }
 
-.detail{
-    padding: 3%;
-}
+    .detail {
+        padding: 3%;
+    }
 
     .lignedestok {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         padding: 0%;
-     
+
     }
 
     .image {
@@ -690,7 +672,7 @@ i .fa-solid .fa-arrow-left {
 
     .titre-selection {
         margin-left: 200px;
-       margin-bottom: 20px;
+        margin-bottom: 20px;
     }
 
 
@@ -701,9 +683,9 @@ i .fa-solid .fa-arrow-left {
 
     }
 
-.commandez{
-    padding-bottom: 0%;
-}
+    .commandez {
+        padding-bottom: 0%;
+    }
 
     footer {
         padding-top: 3%;
