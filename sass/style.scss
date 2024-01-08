@@ -86,7 +86,7 @@ a {
 }
 
 .fonctionement h2 {
-    padding-left: %;
+    padding-left: 2%;
 }
 
 .btn-fonctionement {
@@ -131,10 +131,11 @@ a {
 
 /*Restaurant*/
 .restaurants {
-    padding-left: 2%;
+    padding-left: 3%;
     padding-right: 2%;
     background-color: var(--Gris);
-    padding: 17%;
+    padding-top: 4%;
+    padding-bottom: 3%;
 }
 
 .fiche {
@@ -146,7 +147,7 @@ a {
     height: 100%;
     box-sizing: border-box;
     margin-top: 10px;
-
+gap:10px;
 
 }
 
