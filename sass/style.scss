@@ -79,9 +79,9 @@ a {
     flex-direction: column;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
     padding-top: 10%;
     padding-bottom: 10%;
+    padding-left: 1%;
 }
 
 .fonctionement h2 {
@@ -97,9 +97,9 @@ a {
     box-sizing: border-box;
     box-shadow: 2px 2px 2px 1px #938b8b44;
     background-color: var(--Gris);
-    width: 322px;
     height: 72px;
     font-family: 'Roboto', sans-serif;
+    width: 98%; // A LA DEMANDE DE LEVALUATEUR : Demande que ca prenne tout l'esapce mais leger espace sur figma 
 }
 
 .icone:hover {
@@ -111,7 +111,6 @@ a {
     flex-direction: row;
     align-items: center;
     margin: 2%;
-    width: 80%;
 }
 
 .numero {
@@ -187,8 +186,8 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    min-width: 346px;
-    /*  attention min fait sortir de la box pour les dimensions extremement petite sera peut demande de retirer   */
+    /* min-width: 346px;
+     attention min fait sortir de la box pour les dimensions extremement petite   */
     height: 175px;
     border-radius: 20px 20px 0 0;
 }
@@ -253,8 +252,10 @@ input.coeur-cb:checked~.coeur-uc {
     background: black;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
 }
 
+// CHANGEMENT SUITE SOUTENANCE AJOUT ANIMATION progressive couleur 
 .fa-solid.fa-heart {
     width: $coeur-width;
     height: $coeur-height;
@@ -262,6 +263,39 @@ input.coeur-cb:checked~.coeur-uc {
     background: radial-gradient(#FF79DA, #9356DC);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation: fa-solid-fa-heart 3s;
+}
+
+@keyframes fa-solid-fa-heart {
+    0% {
+        transform: scale(0.1); //  va grandir de l'interieur 
+        opacity: 0.1; // va devenir de plus en plus visible 
+
+    }
+
+    25% {
+        transform: scale(0.4);
+        opacity: 0.4;
+
+    }
+
+    50% {
+        transform: scale(0.6);
+        opacity: 0.6;
+
+    }
+
+    75% {
+        transform: scale(0.7);
+        opacity: 0.8;
+
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+
+    }
 }
 
 /*Footer*/
@@ -499,7 +533,6 @@ i .fa-solid .fa-arrow-left {
 }
 
 .presentation .menu .recette:hover .checked i {
-
     transition: transform 2s ease-in-out;
 }
 
@@ -585,6 +618,11 @@ i .fa-solid .fa-arrow-left {
         padding-bottom: 2%;
         max-width: 1055px;
         margin: auto;
+
+    }
+
+    .btn-fonctionement {
+        width: 322px;
     }
 
     .ligne-fonctionement {
