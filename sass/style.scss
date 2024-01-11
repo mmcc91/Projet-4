@@ -188,6 +188,7 @@ a {
     background-repeat: no-repeat;
     width: 100%;
     min-width: 346px;
+    /*  attention min fait sortir de la box pour les dimensions extremement petite sera peut demande de retirer   */
     height: 175px;
     border-radius: 20px 20px 0 0;
 }
@@ -511,7 +512,7 @@ i .fa-solid .fa-arrow-left {
 
 
 
-/* Animation debut de page slide des plats */
+/* Animation debut de page/chargement des slide des plats */
 .entrees {
     animation: apparition 1s backwards;
     padding-top: 10PX;
@@ -571,7 +572,6 @@ i .fa-solid .fa-arrow-left {
 
     .explorer h1 {
         font-size: 40px;
-
         font-weight: 900;
     }
 
@@ -581,7 +581,6 @@ i .fa-solid .fa-arrow-left {
     }
 
     .fonctionement {
-
         padding-top: 2%;
         padding-bottom: 2%;
         max-width: 1055px;
@@ -659,7 +658,6 @@ i .fa-solid .fa-arrow-left {
     }
 
     .menu {
-
         padding: 3%;
         margin-top: -3%;
         align-content: center;

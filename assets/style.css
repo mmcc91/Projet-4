@@ -182,6 +182,7 @@ a {
   background-repeat: no-repeat;
   width: 100%;
   min-width: 346px;
+  /*  attention min fait sortir de la box pour les dimensions extremement petite sera peut demande de retirer   */
   height: 175px;
   border-radius: 20px 20px 0 0;
 }
@@ -473,7 +474,7 @@ i .fa-solid .fa-arrow-left {
   padding-bottom: 5%;
 }
 
-/* Animation debut de page slide des plats */
+/* Animation debut de page/chargement des slide des plats */
 .entrees {
   animation: apparition 1s backwards;
   padding-top: 10PX;
